@@ -11,9 +11,9 @@ function App() {
       <Menu />
 
       <BannerMain
-          videoTitle = {dadosIniciais.categorias[0].videos[0].titulo}
-          url={dadosIniciais.categorias[0].videos[0].url}
-          videoDescription = {"O que é front-end ? Trabalhando na área"}
+          videoTitle = {dadosIniciais.categorias[3].videos[5].titulo}
+          url={dadosIniciais.categorias[3].videos[5].url}
+          videoDescription = {"Peaky Blinders"}
        />
       
       <Carousel 
