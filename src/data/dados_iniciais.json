@@ -1,53 +1,41 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "NBA",
+      "link": "https://www.youtube.com/user/NBA",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Liga americana de Basquete",
+        "url": "https://www.youtube.com/user/NBA"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Ja Morant marca 22 PTS e 12 AST para liderar grizzlies!",
+          "url": "https://www.youtube.com/watch?v=WjyVHHjVUT0"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Melhores Momentos dos Los Angels | Temporada 2019-20 da NBA",
+          "url": "https://www.youtube.com/watch?v=WRgCiZARcR4"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Os Melhores lances de Bol Bol | NBA Scrimmages",
+          "url": "https://www.youtube.com/watch?v=plXFdN4dsOI"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Melhor de Giannis Antetokounmpo | NBA Scrimmages",
+          "url": "https://www.youtube.com/watch?v=uyiquZZ6t_U"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
-        },
-        {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-        },
-        {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Nba Top 5 jogos da noite | 27 de julho de 2020",
+          "url": "https://www.youtube.com/watch?v=-bOHbU3r350"
         }        
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "Futebol",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
+        "text": "Liga dos campeões (UEFA)",
         "url": "https://www.alura.com.br/cursos-online-programacao"
       },
       "videos": [
