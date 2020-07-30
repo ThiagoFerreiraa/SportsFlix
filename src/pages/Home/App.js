@@ -11,9 +11,9 @@ function Home() {
       <Menu />
 
       <BannerMain
-          videoTitle = {dadosIniciais.categorias[0].videos[1].titulo}
-          url={dadosIniciais.categorias[0].videos[1].url}
-          videoDescription = {"Peaky Blinders"}
+          videoTitle = {dadosIniciais.categorias[0].videos[0].titulo}
+          url={dadosIniciais.categorias[0].videos[0].url}
+          videoDescription = {"A historia de superação do Black Mamba"}
        />
       
       <Carousel 
@@ -21,27 +21,13 @@ function Home() {
       />
 
       <Carousel 
-      ignoreFirstVideo
       category= {dadosIniciais.categorias[1]}
       />
 
       <Carousel 
-      ignoreFirstVideo
       category= {dadosIniciais.categorias[2]}
       />
-      <Carousel 
-      ignoreFirstVideo
-      category= {dadosIniciais.categorias[3]}
-      />
-      <Carousel 
-      ignoreFirstVideo
-      category= {dadosIniciais.categorias[4]}
-      />
-      <Carousel 
-      ignoreFirstVideo
-      category= {dadosIniciais.categorias[5]}
-      />
-
+    
       <Footer/>
     
     </div>

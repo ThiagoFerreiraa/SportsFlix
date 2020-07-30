@@ -10,24 +10,24 @@
       },
       "videos": [
         {
-          "titulo": "Ja Morant marca 22 PTS e 12 AST para liderar grizzlies!",
-          "url": "https://www.youtube.com/watch?v=WjyVHHjVUT0"
+          "titulo": "O Preço da Grandeza, com Kobe Bryant",
+          "url": "https://www.youtube.com/watch?v=ukF7XJshRwg"
         },
         {
-          "titulo": "Melhores Momentos dos Los Angels | Temporada 2019-20 da NBA",
-          "url": "https://www.youtube.com/watch?v=WRgCiZARcR4"
+          "titulo": "Oscar Schmidt - Discurso Emocionante no Hall da Fama do Basquete",
+          "url": "https://www.youtube.com/watch?v=OsJ5d12ybkA"
         },
         {
-          "titulo": "Os Melhores lances de Bol Bol | NBA Scrimmages",
-          "url": "https://www.youtube.com/watch?v=plXFdN4dsOI"
+          "titulo": "Jumpman, com Michael Jordan",
+          "url": "https://www.youtube.com/watch?v=_2czmW9zAbw"
         },
         {
-          "titulo": "Melhor de Giannis Antetokounmpo | NBA Scrimmages",
-          "url": "https://www.youtube.com/watch?v=uyiquZZ6t_U"
+          "titulo": "Magic Johnson",
+          "url": "https://www.youtube.com/watch?v=ui3bHG5s8Qo"
         },
         {
-          "titulo": "Nba Top 5 jogos da noite | 27 de julho de 2020",
-          "url": "https://www.youtube.com/watch?v=-bOHbU3r350"
+          "titulo": "NBA 70",
+          "url": "https://www.youtube.com/watch?v=mJQVk4SIN1s"
         }        
       ]
     },
@@ -35,147 +35,57 @@
       "titulo": "Futebol",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Liga dos campeões (UEFA)",
+        "text": "Soccer for World",
         "url": "https://www.alura.com.br/cursos-online-programacao"
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "'Brasil Football Club' - A história do futebol brasileiro",
+          "url": "https://www.youtube.com/watch?v=mLtRmNtde8Y"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Ronaldinho Gaúcho - O FILME",
+          "url": "https://www.youtube.com/watch?v=rurpg1Quigw"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "Maradona - A Vida De Um Gênio Do Futebol",
+          "url": "https://www.youtube.com/watch?v=EjJwmRiUY2Q"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Cristiano Ronaldo - INDESCRITÍVEL",
+          "url": "https://www.youtube.com/watch?v=1lie_YbcAiA"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Euro 2016 • O Filme •",
+          "url": "https://www.youtube.com/watch?v=1mGx8Y_0SyY"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "UFC",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "Ultimate Fighting Championship",
+        "url": "https://www.youtube.com/watch?v=RKpM7MUff1c"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": " UFC History",
+          "url": "https://www.youtube.com/watch?v=RKpM7MUff1c"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Michael Bisping - My Destiny",
+          "url": "https://www.youtube.com/watch?v=EUnlc84g47s"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Conor McGregor - No Limit",
+          "url": "https://www.youtube.com/watch?v=yv4qxaMZ49s"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Return of the GOAT",
+          "url": "https://www.youtube.com/watch?v=KieBixFmaUE"
         }
       ]
-    },
-    {
-      "titulo": "Filmes",
-      "cor": "orange",
-      "videos": [
-        {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-        },
-        {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-        },
-        {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-        },
-        {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-        },
-        {
-          "titulo": "Avatar",
-          "url": "https://www.youtube.com/watch?v=6ziBFh3V1aM"
-        },
-        {
-          "titulo": "Peaky Blinders",
-          "url": "https://www.youtube.com/watch?v=oVzVdvGIC7U"
-        }
-      ]
-    },
-    {
-      "titulo": "Games",
-      "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
-      "videos": [
-        {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
-        },
-        {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
-        },
-        {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
-        },
-        {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-        },
-        {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
-        }
-      ]
-    },
-    {
-      "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
-      "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
-      "videos": [
-        {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
-        },
-        {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
-        },
-        {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        },
-        {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
-        },
-        {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
-        }
-      ]
-    }
+    }    
   ]
 }

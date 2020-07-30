@@ -1,8 +1,10 @@
 import React from 'react';
 import { VideoCardGroupContainer, VideoCardList, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
+import Slider, {SliderItem} from './Slider';
+ 
 
-function VideoCardGroup({
+function Carousel({
   ignoreFirstVideo,
   category,
 }) {
@@ -31,13 +33,13 @@ function VideoCardGroup({
           }
 
           return (
-            <li key={video.titulo}>
+            <SliderItem key={video.titulo}>
               <VideoCard
                 videoTitle={video.titulo}
                 videoURL={video.url}
                 categoryColor={categoryColor}
               />
-            </li>
+            </SliderItem>
           );
         })}
       </VideoCardList>
@@ -45,4 +47,4 @@ function VideoCardGroup({
   );
 }
 
-export default VideoCardGroup;
+export default Carousel;
