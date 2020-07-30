@@ -1,13 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 import Menu from '../../componentes/Menu';
 import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../componentes/BannerMain';
 import Carousel from '../../componentes/Carousel';
 import Footer from '../../componentes/Footer';
 
+const AppWrapper =styled.div `
+background: var(--grayDark);
+`;
+
 function Home() {
   return (
-    <div style = {{background : "#141414"}}>
+    <AppWrapper>
       <Menu />
 
       <BannerMain
@@ -30,7 +35,7 @@ function Home() {
     
       <Footer/>
     
-    </div>
+    </AppWrapper>
   );
 }
 

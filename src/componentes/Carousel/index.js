@@ -1,7 +1,7 @@
 import React from 'react';
 import { VideoCardGroupContainer, VideoCardList, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
-import Slider, {SliderItem} from './Slider';
+import {SliderItem} from './Slider';
  
 
 function Carousel({
