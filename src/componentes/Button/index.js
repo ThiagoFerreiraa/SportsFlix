@@ -3,18 +3,19 @@ import { Link } from 'react-router-dom';
 
 const Button = styled(Link)`
     color:var(--white);
-    border: 1px solid var(--white);
+    border: 2px solid var(--white);
     padding:16px 24px;
     font-size:16px;
     border-radius:4px;
     font-weight:bold;
     outline:none;
     text-decoration:none;
-    transition: opacity .3s;
+    transition: all .3s;
 
     &:hover,
     &:focus{
-        opacity:.5;
+        color:var(--primary);
+        border: 2px solid var(--primary);
     }
 
     @media(max-width:800px){
