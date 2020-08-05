@@ -42,3 +42,42 @@ export const MenuWrapper = styled.nav`
     }
 `;
 
+export const ButtonLink = styled.a`
+    color:var(--white);
+    border: 2px solid var(--white);
+    background:var(--black);
+    padding:16px 24px;
+    font-size:16px;
+    border-radius:4px;
+    font-weight:bold;
+    outline:none;
+    text-decoration:none;
+    transition: all .3s;
+
+    &:hover,
+    &:focus{
+        color:var(--primary);
+        border: 2px solid var(--primary);
+    }
+
+    @media(max-width:800px){
+        position:fixed;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color:var(--primary);
+        color:var(--white);
+        outline:none;
+        text-align:center;
+        border:0;
+        border-radius:0;
+
+        &:hover,
+        &:focus{
+        color:var(--white);
+        border:none;
+        }
+
+    }
+`;
+
