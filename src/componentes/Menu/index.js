@@ -11,7 +11,7 @@ function Menu() {
       <Link to="/">
         <LogoImage className="Logo" src={Logo} alt="SportFlix logo" />
       </Link>
-      <ButtonLink className="ButtonLink" to="/cadastro/video">
+      <ButtonLink as={Link} className="ButtonLink" to="/cadastro/video">
         Novo video
       </ButtonLink>
     </MenuWrapper>

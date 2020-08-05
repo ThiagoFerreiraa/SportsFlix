@@ -6,7 +6,7 @@ import BannerMain from '../../componentes/BannerMain';
 import Carousel from '../../componentes/Carousel';
 import Footer from '../../componentes/Footer';
 
-const AppWrapper =styled.div `
+const AppWrapper = styled.div`
 background: var(--grayDark);
 padding-top: 94px;
 @media(max-width:800px){  
@@ -20,25 +20,25 @@ function Home() {
       <Menu />
 
       <BannerMain
-          videoTitle = {dadosIniciais.categorias[0].videos[0].titulo}
-          url={dadosIniciais.categorias[0].videos[0].url}
-          videoDescription = {"A historia de superação do Black Mamba"}
-       />
-      
-      <Carousel 
-        category= {dadosIniciais.categorias[0]}
+        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
+        url={dadosIniciais.categorias[0].videos[0].url}
+        videoDescription="A historia de superação do Black Mamba"
       />
 
-      <Carousel 
-      category= {dadosIniciais.categorias[1]}
+      <Carousel
+        category={dadosIniciais.categorias[0]}
       />
 
-      <Carousel 
-      category= {dadosIniciais.categorias[2]}
+      <Carousel
+        category={dadosIniciais.categorias[1]}
       />
-    
-      <Footer/>
-    
+
+      <Carousel
+        category={dadosIniciais.categorias[2]}
+      />
+
+      <Footer />
+
     </AppWrapper>
   );
 }

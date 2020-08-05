@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import Titulo from './style';
 import PageDefault from '../../../componentes/PageDefault';
 import FormField from '../../../componentes/FormField';
 import Button from '../../../componentes/Button';
@@ -30,11 +30,46 @@ function CadastroCategoria() {
     );
   }
 
-  const Titulo = styled.h1`
-     margin-bottom:20px;
-     display:flex;
-     justify-content:center;
-  `;
+  useEffect(() => {
+
+   //Bucando Arquivos no json.
+
+    console.log('Alo Thiago');
+    const URL_TOP = 'http://localhost:8080/categorias';
+
+    // fetch(URL_TOP).then((respostaDoServidor) => {
+    //   return respostaDoServidor.json();
+    // }).then((respostaDoServidorJson) => {
+    //   console.log(respostaDoServidorJson);
+    // });
+
+    // ou vc pode usar assim...
+
+    fetch(URL_TOP).then(async (respostaDoServidor) => {
+      const resposta = await respostaDoServidor.json();
+      setCategorias([
+        ...resposta,
+      ]);
+    });
+
+    // setTimeout(() => {
+    //   setCategorias([
+    //     ...categorias,
+    //     {
+    //       id: 1,
+    //       nome: 'Front End',
+    //       descricao: 'Uma categoria bacanuda',
+    //       cor: '#cbd1ff',
+    //     },
+    //     {
+    //       id: 2,
+    //       nome: 'Back End',
+    //       descricao: 'Outra categoria bacanuda',
+    //       cor: '#cbd1ff',
+    //     },
+    //   ]);
+    // }, 4 * 1000);
+  }, []);
 
   return (
     <PageDefault>
@@ -85,15 +120,19 @@ function CadastroCategoria() {
 
       </form>
 
-      {/*
+      {categorias.length === 0 && (
+        <div>
+          Loading...
+        </div>
+      )}
+
       <ul>
         {categorias.map((categorias, indice) => (
           <li key={`${categorias}${indice}`}>
             {categorias.nome}
-            {categorias.descricao}
           </li>
         ))}
-      </ul> */}
+      </ul>
 
       <Link to="/">
         Ir para Home
