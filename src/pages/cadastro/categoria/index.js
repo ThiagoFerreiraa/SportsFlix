@@ -31,11 +31,11 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
+    // Bucando Arquivos no json.
 
-   //Bucando Arquivos no json.
-
-    console.log('Alo Thiago');
-    const URL_TOP = 'http://localhost:8080/categorias';
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://sportflix.herokuapp.com/categorias';
 
     // fetch(URL_TOP).then((respostaDoServidor) => {
     //   return respostaDoServidor.json();
@@ -127,9 +127,9 @@ function CadastroCategoria() {
       )}
 
       <ul>
-        {categorias.map((categorias, indice) => (
-          <li key={`${categorias}${indice}`}>
-            {categorias.nome}
+        {categorias.map((categoria) => (
+          <li key={`${categoria.nome}`}>
+            {categoria.nome}
           </li>
         ))}
       </ul>
