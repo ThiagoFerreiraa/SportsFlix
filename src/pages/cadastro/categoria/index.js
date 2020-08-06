@@ -1,34 +1,32 @@
 /* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Ring } from 'react-spinners-css';
+import styled from 'styled-components';
 import Titulo from './style';
 import PageDefault from '../../../componentes/PageDefault';
 import FormField from '../../../componentes/FormField';
 import Button from '../../../componentes/Button';
+import Table from '../../../componentes/Table';
+import useForm from '../../../hocks/useForm';
 
 function CadastroCategoria() {
+  const LoadingWrapper = styled.div`
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   margin: 10px auto;
+  `;
+
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   };
 
+  const { HandlerMudancas, valores, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [valores, setValores] = useState(valoresIniciais);
-
-  function setValue(chave, valor) {
-    setValores({
-      ...valores,
-      [chave]: valor,
-    });
-  }
-
-  function HandlerMudancas(infoEvento) {
-    setValue(
-      infoEvento.target.getAttribute('name'),
-      infoEvento.target.value,
-    );
-  }
 
   useEffect(() => {
     // Bucando Arquivos no json.
@@ -37,14 +35,6 @@ function CadastroCategoria() {
       ? 'http://localhost:8080/categorias'
       : 'https://sportflix.herokuapp.com/categorias';
 
-    // fetch(URL_TOP).then((respostaDoServidor) => {
-    //   return respostaDoServidor.json();
-    // }).then((respostaDoServidorJson) => {
-    //   console.log(respostaDoServidorJson);
-    // });
-
-    // ou vc pode usar assim...
-
     fetch(URL_TOP).then(async (respostaDoServidor) => {
       const resposta = await respostaDoServidor.json();
       setCategorias([
@@ -52,30 +42,24 @@ function CadastroCategoria() {
       ]);
     });
 
-    // setTimeout(() => {
-    //   setCategorias([
-    //     ...categorias,
-    //     {
-    //       id: 1,
-    //       nome: 'Front End',
-    //       descricao: 'Uma categoria bacanuda',
-    //       cor: '#cbd1ff',
-    //     },
-    //     {
-    //       id: 2,
-    //       nome: 'Back End',
-    //       descricao: 'Outra categoria bacanuda',
-    //       cor: '#cbd1ff',
-    //     },
-    //   ]);
-    // }, 4 * 1000);
-  }, []);
+    // ou vc pode usar assim...
+
+    // fetch(URL_TOP).then((respostaDoServidor) => {
+    //   return respostaDoServidor.json();
+    // }).then((respostaDoServidorJson) => {
+    //   console.log(respostaDoServidorJson);
+    // });
+
+  // setTimeout(() => {
+  //     <Ring color="var(--primary)" size={100} />
+  // }, []);
+  });
 
   return (
     <PageDefault>
       <Titulo>
         Cadastro de Categoria:
-        {valores.nome}
+        {valores.titulo}
       </Titulo>
 
       <form onSubmit={
@@ -85,21 +69,22 @@ function CadastroCategoria() {
             ...categorias,
             valores,
           ]);
-          setValores(valoresIniciais);
+
+          clearForm();
         }
-        }
+      }
       >
 
         <FormField
           label="Nome da  Categoria"
           type="text"
-          value={valores.nome}
+          value={valores.titulo}
           onChange={HandlerMudancas}
-          name="nome"
+          name="titulo"
         />
 
         <FormField
-          label="Descricao"
+          label="Descrição"
           type="textarea"
           value={valores.descricao}
           onChange={HandlerMudancas}
@@ -120,19 +105,12 @@ function CadastroCategoria() {
 
       </form>
 
+      <Table categorias={categorias} />
       {categorias.length === 0 && (
-        <div>
-          Loading...
-        </div>
+        <LoadingWrapper>
+          <Ring color="var(--primary)" size={100} />
+        </LoadingWrapper>
       )}
-
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
-          </li>
-        ))}
-      </ul>
 
       <Link to="/">
         Ir para Home

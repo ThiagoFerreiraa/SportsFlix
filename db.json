@@ -1,16 +1,117 @@
 {
-    "categorias":[
-     {
-        "id": 1,
-        "nome": "Front End",
-        "descricao": "Uma categoria bacanuda",
-        "cor": "#cbd1ff"
-     },
-     {
-        "id": 2,
-        "nome": "Back End",
-        "descricao": "Outra categoria bacanuda",
-        "cor": "#cbd1ff"
-     }
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "NBA",
+      "cor": "#6BD1FF",
+      "descricao": {
+        "text": "Liga americana de Basquete",
+        "url": "https://www.youtube.com/user/NBA"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Futebol",
+      "cor": "#00C86F",
+      "descricao": {
+        "text": "Soccer for World",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "UFC",
+      "cor": "#9cd33b",
+      "descricao": {
+        "text": "Ultimate Fighting Championship",
+        "url": "https://www.youtube.com/watch?v=RKpM7MUff1c"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "O Preço da Grandeza, com Kobe Bryant",
+      "url": "https://www.youtube.com/watch?v=ukF7XJshRwg"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Oscar Schmidt - Discurso Emocionante no Hall da Fama do Basquete",
+      "url": "https://www.youtube.com/watch?v=OsJ5d12ybkA"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Jumpman, com Michael Jordan",
+      "url": "https://www.youtube.com/watch?v=_2czmW9zAbw"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Magic Johnson",
+      "url": "https://www.youtube.com/watch?v=ui3bHG5s8Qo"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "NBA 70",
+      "url": "https://www.youtube.com/watch?v=mJQVk4SIN1s"
+    },
+    {
+      "id": 1,
+      "categoriaId": 2,
+      "titulo": "'Brasil Football Club' - A história do futebol brasileiro",
+      "url": "https://www.youtube.com/watch?v=mLtRmNtde8Y"
+    },
+    {
+      "id": 2,
+      "categoriaId": 2,
+      "titulo": "Ronaldinho Gaúcho - O FILME",
+      "url": "https://www.youtube.com/watch?v=rurpg1Quigw"
+    },
+    {
+      "id": 3,
+      "categoriaId": 2,
+      "titulo": "Maradona - A Vida De Um Gênio Do Futebol",
+      "url": "https://www.youtube.com/watch?v=EjJwmRiUY2Q"
+    },
+    {
+      "id": 4,
+      "categoriaId": 2,
+      "titulo": "Cristiano Ronaldo - INDESCRITÍVEL",
+      "url": "https://www.youtube.com/watch?v=1lie_YbcAiA"
+    },
+    {
+      "id": 5,
+      "categoriaId": 2,
+      "titulo": "Euro 2016 • O Filme •",
+      "url": "https://www.youtube.com/watch?v=1mGx8Y_0SyY"
+    },
+    {
+      "id": 1,
+      "categoriaId": 3,
+      "titulo": " UFC History",
+      "url": "https://www.youtube.com/watch?v=RKpM7MUff1c"
+    },
+    {
+      "id": 2,
+      "categoriaId": 3,
+      "titulo": "Michael Bisping - My Destiny",
+      "url": "https://www.youtube.com/watch?v=EUnlc84g47s"
+    },
+    {
+      "id": 3,
+      "categoriaId": 3,
+      "titulo": "Conor McGregor - No Limit",
+      "url": "https://www.youtube.com/watch?v=yv4qxaMZ49s"
+    },
+    {
+      "id": 4,
+      "categoriaId": 3,
+      "titulo": "Return of the GOAT",
+      "url": "https://www.youtube.com/watch?v=KieBixFmaUE"
+    }
   ]
 }

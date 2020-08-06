@@ -24,8 +24,8 @@ export const BannerMainContainer = styled.section`
   }
   &:after {
     bottom: 0;
-    background: linear-gradient(0deg, #141414 33%, transparent 100%);
-    height: 20%;
+    background: linear-gradient(0deg, #141414 30%, transparent 100%);
+    height: 50%;
   }
   
 

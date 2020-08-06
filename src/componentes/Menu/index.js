@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/Logo.png';
 import { LogoImage, MenuWrapper, ButtonLink } from './style';
 
-
-
 function Menu() {
   return (
     <MenuWrapper className="Menu">

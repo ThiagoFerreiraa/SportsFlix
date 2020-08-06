@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Button = styled.button`
     color:var(--white);
     border: 2px solid var(--white);
-    background:var(--black);
+    background:var(--grayDark);
     padding:16px 24px;
     margin-bottom:20px;
     font-size:16px;
@@ -13,8 +13,7 @@ const Button = styled.button`
     text-decoration:none;
     transition: all .3s;
 
-    &:hover,
-    &:focus{
+    &:hover{
         color:var(--primary);
         border: 2px solid var(--primary);
     }

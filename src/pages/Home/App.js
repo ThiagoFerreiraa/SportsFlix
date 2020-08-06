@@ -1,25 +1,67 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import Menu from '../../componentes/Menu';
-import dadosIniciais from '../../data/dados_iniciais.json';
+import { Ring } from 'react-spinners-css';
 import BannerMain from '../../componentes/BannerMain';
 import Carousel from '../../componentes/Carousel';
-import Footer from '../../componentes/Footer';
+import categoriasRepository from '../../repositories/categorias';
 
-const AppWrapper = styled.div`
-background: var(--grayDark);
-padding-top: 94px;
-@media(max-width:800px){  
-  padding-top:40px;
-}
+import PageDefault from '../../componentes/PageDefault';
+
+const LoadingWrapper = styled.div`
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   margin: 10px auto;
 `;
 
 function Home() {
-  return (
-    <AppWrapper>
-      <Menu />
+  // eslint-disable-next-line no-shadow
+  const [dadosIniciais, setDadosIniciais] = useState([]);
 
-      <BannerMain
+  useEffect(() => {
+    categoriasRepository.getAllWithVideos()
+      // eslint-disable-next-line max-len
+      .then((categoriasComVideos) => { setDadosIniciais(categoriasComVideos); console.log(categoriasComVideos); })
+      .catch((err) => { console.log(err.message); });
+  }, []);
+
+  // http://localhost:8080/categorias?_embed=videos
+
+  return (
+    <PageDefault paddingAll={0}>
+
+      {dadosIniciais.length === 0 && (
+        <LoadingWrapper>
+          <Ring color="var(--primary)" size={100} />
+        </LoadingWrapper>
+      )}
+
+      {dadosIniciais.map((categoria, indice) => {
+        if (indice === 0) {
+          return (
+            <div key={categoria.id}>
+              <BannerMain
+                videoTitle={dadosIniciais[0].videos[0].titulo}
+                url={dadosIniciais[0].videos[0].url}
+                videoDescription="A historia de superação do Black Mamba"
+              />
+
+              <Carousel
+                category={dadosIniciais[0]}
+              />
+            </div>
+          );
+        }
+
+        return (
+          <Carousel
+            key={categoria.id}
+            category={categoria}
+          />
+        );
+      })}
+
+      {/* <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
         videoDescription="A historia de superação do Black Mamba"
@@ -35,11 +77,8 @@ function Home() {
 
       <Carousel
         category={dadosIniciais.categorias[2]}
-      />
-
-      <Footer />
-
-    </AppWrapper>
+      /> */}
+    </PageDefault>
   );
 }
 
